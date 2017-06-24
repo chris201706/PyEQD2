@@ -1,2 +1,2 @@
-# DCM-RTDOSE-to-EQD2
+# PyEQD2
 to be added
