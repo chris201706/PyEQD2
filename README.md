@@ -29,7 +29,7 @@ a.multiply(factor)
 
 #### Requirements:
 Python 3.6.1 with packages:
-** Matplotlib
+* Matplotlib
 * NumPy
 * pydicom
 
