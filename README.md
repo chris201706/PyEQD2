@@ -12,8 +12,8 @@ dicompath = '/Users/macuser/Downloads/testfile.dcm'
 a = RTDose(dicompath)
 a.plot()
 a.plot_legend()
-fractions = 8   #number of fractions
-abratio = 3   #alpha/beta ratio
+fractions = 8   # number of fractions
+abratio = 3     # alpha/beta ratio
 a.make_EQD2(fractions, abratio)
 a.export()
 ```
