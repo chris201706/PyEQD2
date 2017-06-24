@@ -8,9 +8,9 @@ Use Python to convert a DICOM-RT dose distribution to its Linear Quadratic Equiv
 
 #### Example (Main Functions)
 ```
-import PyEQD2 as eq
+import PyEQD2 as eqd
 dicompath = '/Users/macuser/Downloads/testfile.dcm'
-a = eq.RTDose(dicompath)
+a = eqd.RTDose(dicompath)
 a.plot()
 a.plot_legend()
 fractions = 8   # number of fractions
