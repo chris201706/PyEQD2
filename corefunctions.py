@@ -217,5 +217,3 @@ array_multiplied, new_scalefactor = dcm_multiply(array_uint, dcmfile.DoseGridSca
 # [D] https://ushik.ahrq.gov/ViewItemDetails?system=mdr&itemKey=79808000
 # [E] American Association of Physicists in Medicine (AAPM), »The Use and QA of Biologically Related Models for Treatment Planning«, 2012
 # [F] https://stackoverflow.com/questions/5849800/tic-toc-functions-analog-in-python
-
-
