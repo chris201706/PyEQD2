@@ -28,10 +28,10 @@ a.multiply(factor)
 <br />
 
 #### Requirements:
-* Python 3.6.1
-* Matplotlib Package
-* NumPy Package
-* pydicom Package
+Python 3.6.1 with packages:
+* Matplotlib
+* NumPy
+* pydicom
 
 <br />
 
