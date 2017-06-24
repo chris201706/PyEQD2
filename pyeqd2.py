@@ -62,6 +62,3 @@ a.export()
 ### References ###
 ##################
 # [A] http://dicomiseasy.blogspot.de/2012/08/chapter-12-pixel-data.html
-
-
-
