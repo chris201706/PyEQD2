@@ -18,8 +18,8 @@ a.export()
 Other commands include:
 ```
 a.multiply(8)
+# (for an easy way to multiply the entire dose distribution before or after conversion to EQD2)
 ```
-(for an easy way to multiply the entire dose distribution before or after conversion to EQD2)
 
 <br />
 <br />
