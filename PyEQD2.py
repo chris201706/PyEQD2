@@ -38,7 +38,7 @@ class RTDose:
     def multiply(self, factor):
         self.pixelarray, self.scalefactor = dcm_multiply(self.pixelarray, self.scalefactor, self.precision, self.signedness, self.raw_maxval, factor)
     def plot(self):
-        rtdose_plot(self.pixelarray, self.pixelspacing, self.name, newjet)
+        rtdose_plot(self.pixelarray, self.name, newjet)
     def plot_legend(self):
         legend(newjet)
         pass
