@@ -1,2 +1,2 @@
 # PyEQD2
-to be added
+Description to be added
