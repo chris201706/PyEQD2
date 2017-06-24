@@ -3,6 +3,7 @@
 
 # PyEQD2
 Convert a DICOM-RT dose distribution to its Linear Quadratic Equivalent Dose (LQED2, EQD2).
+<br />
 
 #### Example (Main Functions)
 ```
