@@ -28,7 +28,7 @@ a.multiply(factor)
 <br />
 
 #### Requirements:
-Python 3.6.1 with packages:
+Python 3 Standard Library with the following additional packages:
 * Matplotlib
 * NumPy
 * pydicom
