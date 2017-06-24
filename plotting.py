@@ -89,9 +89,7 @@ def rtdose_plot(pixelarray, name, colormap):
     plt.show()
 
 ''' Test
-dicompath = '/Users/***REMOVED***/Downloads/DICOMS/HN01_IBT_effective_fraction_plan.dcm'   #min 0 #max 65534
-dicompath = '/Users/***REMOVED***/Downloads/DICOMS/HN13_IBT_effective_fraction_plan.dcm'   #min 0 #max 65535
-dicompath = '/Users/***REMOVED***/Downloads/DICOMS/HN03_IMRTalt.dcm'
+dicompath = '/Users/macuser/Downloads/testfile.dcm'
 dcmfile = import_dcm(dicompath)
 rtdose_plot(dcmfile.pixel_array, 'RTDOSE', newjet)
 \Test '''
