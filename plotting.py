@@ -97,4 +97,3 @@ rtdose_plot(dcmfile.pixel_array, 'RTDOSE', newjet)
 # [B] https://stackoverflow.com/questions/2451264/creating-a-colormap-legend-in-matplotlib
 # [C] https://stackoverflow.com/questions/19626530/python-xticks-in-subplots
 # [D] https://stackoverflow.com/questions/36483060/typeerror-dimensions-of-c-are-incompatible-with-x-y
-
