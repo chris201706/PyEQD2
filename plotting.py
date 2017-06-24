@@ -80,7 +80,6 @@ def rtdose_plot(pixelarray, name, colormap):
             axes[r,c].pcolormesh(rotated, cmap=colormap, vmin=0) 
             axes[r,c].set_title('Slice #%d' % (curr_slice_index+1), fontsize=9)
             counter += 1
-    # for all axes: (https://stackoverflow.com/questions/19626530/python-xticks-in-subplots)
     plt.savefig("Samples_of_%s" % name, bbox_inches="tight")
     plt.show()
 
