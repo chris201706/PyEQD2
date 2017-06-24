@@ -11,7 +11,6 @@ Summary:    Plotting function for dose distribution. Legend. Custom colormap.
 ### Preamble ###
 ################
 
-# Import modules
 import matplotlib.colors as colors
 import matplotlib.pyplot as plt
 import numpy as np
