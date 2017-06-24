@@ -4,7 +4,7 @@
 # PyEQD2
 Convert a DICOM-RT dose distribution to its Linear Quadratic Equivalent Dose (LQED2, EQD2).
 
-#### Example
+#### Example (Main Functions)
 ```
 dicompath = '/Users/macuser/Downloads/testfile.dcm'
 a = RTDose(dicompath)
@@ -15,7 +15,7 @@ a.make_EQD2(1,3)
 a.export()
 ```
 
-Other commands include:
+#### Example (Other Commands)
 ```
 # For an easy way to multiply the entire dose distribution before or after conversion to EQD2:
 a.multiply(8)
