@@ -16,9 +16,6 @@ import matplotlib.colors as colors
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Interpreter configuration
-# np.set_printoptions(threshold=np.inf)   # let NumPy print arrays in full size
-
 
 ################
 ### Plotting ###
