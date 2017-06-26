@@ -33,7 +33,7 @@ class RTDose:
             print("––New instance of Class RTDose has been initiated.")
         else:
             raise ValueError("Input file is not of modality 'RTDOSE'.(Returning False.)")
-    def make_EQD2(self, fn, abratio):
+    def make_eqd2(self, fn, abratio):
         self.pixelarray, self.scalefactor = dcm_to_eqd2(self.pixelarray, self.scalefactor, self.precision, self.signedness, self.raw_maxval, fn, abratio)
     def multiply(self, factor):
         self.pixelarray, self.scalefactor = dcm_multiply(self.pixelarray, self.scalefactor, self.precision, self.signedness, self.raw_maxval, factor)
@@ -53,7 +53,7 @@ a.plot_legend()
 a.plot()
 a.make_eqd2(8,3)
 a.multiply(8)
-a.make_EQD2(1,3)
+a.make_eqd2(1,3)
 a.export()
 \Test '''
 
