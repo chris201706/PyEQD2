@@ -17,7 +17,7 @@ a.plot_legend()
 
 fractions = 8   # number of fractions
 abratio = 3     # alpha/beta ratio
-a.make_EQD2(fractions, abratio)
+a.make_eqd2(fractions, abratio)
 a.export()
 ```
 
