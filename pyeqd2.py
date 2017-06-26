@@ -51,7 +51,7 @@ a = RTDose(dicompath)
 a.name
 a.plot_legend()
 a.plot()
-a.make_EQD2(8,3)
+a.make_eqd2(8,3)
 a.multiply(8)
 a.make_EQD2(1,3)
 a.export()
