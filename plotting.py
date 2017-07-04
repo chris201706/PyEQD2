@@ -44,7 +44,7 @@ def legend(colormap):
     plt.imshow(m, colormap, aspect=100)
     plt.yticks([])
     plt.xticks([])
-    plt.xlabel('0 – 100%',fontsize=14)
+    plt.xlabel('0 – 100% (of maximum dose)',fontsize=14)
     plt.title('Color Legend',fontsize=14)
     plt.savefig('Legend.png')
     plt.show()
