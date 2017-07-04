@@ -177,7 +177,6 @@ def export_dcm(dcmfile, name):
 
 ''' Test
 export_dcm(array_uint,new_scalefactor)
-export_dcm(array_uint,new_scalefactor)
 \Test '''
 
 
