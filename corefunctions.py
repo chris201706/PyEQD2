@@ -176,8 +176,8 @@ def export_dcm(dcmfile, name):
         "Name: %s" % (name+'.dcm'))
 
 ''' Test
-export_dcm(array_uint,new_scalefactor,'_EQD2')
-export_dcm(array_uint,new_scalefactor,'_multiplied')
+export_dcm(array_uint,new_scalefactor)
+export_dcm(array_uint,new_scalefactor)
 \Test '''
 
 
