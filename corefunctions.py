@@ -170,10 +170,10 @@ array_uint, new_scalefactor = scale_for_storage(array_multiplied)
 
 def export_dcm(dcmfile, name):
     path = os.getcwd()+'/'
-    dcmfile.save_as(path+name+'.dcm')
+    dcmfile.save_as(path+name+'_PyEQD2.dcm')
     print("——Exported the DICOM file to current working directory.\n",
         "Location: %s\n" % path,
-        "Name: %s" % (name+'.dcm'))
+        "Name: %s" % (name+'_PyEQD2.dcm'))
 
 ''' Test
 export_dcm(array_uint,new_scalefactor)
