@@ -183,7 +183,7 @@ export_dcm(array_uint,new_scalefactor)
 def dcm_to_eqd2(orig_pixelarray, orig_scalefactor, orig_precision, orig_signedness, orig_maxval, fn, abratio):
     try:
         scaled = scale_for_use(orig_pixelarray, orig_scalefactor)
-        equalized = equalize(scaled,1,3)
+        equalized = equalize(scaled, fn, abratio)
         new_pixelarray, new_scalefactor = scale_for_storage(equalized, orig_precision, orig_signedness, orig_maxval)
         return new_pixelarray, new_scalefactor
     except:
