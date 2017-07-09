@@ -7,18 +7,12 @@ Summary:    Import/Export DICOM RT-DOSE, convert to EQD2, plot dose distribution
 '''
 
 
-################
 ### Preamble ###
-################
-
 from corefunctions import *
 from plotting import *
 
 
-########################
 ### Class Definition ###
-########################
-
 class RTDose:
     def __init__(self, filepath):
         self.dcmfile = import_dcm(filepath)
@@ -58,7 +52,5 @@ a.export()
 \Test '''
 
 
-##################
 ### References ###
-##################
 # [A] http://dicomiseasy.blogspot.de/2012/08/chapter-12-pixel-data.html
