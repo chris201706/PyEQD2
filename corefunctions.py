@@ -7,11 +7,7 @@ Summary:    Import/Export DICOM RT-DOSE, convert to EQD2, multiply dose distribu
 '''
 
 
-################
 ### Preamble ###
-################
-
-# Import modules
 import numpy as np
 import os
 import pydicom as dcm   # the pydicom module
@@ -21,10 +17,7 @@ import time
 # np.set_printoptions(threshold=None)   # let NumPy print arrays in full size
 
 
-######################
 ### Core Functions ###
-######################
-
 def import_dcm(filepath):
     try:
         dcmfile = dcm.read_file(filepath, force=True)
@@ -207,9 +200,8 @@ def dcm_multiply(orig_pixelarray, orig_scalefactor, orig_precision, orig_signedn
 array_multiplied, new_scalefactor = dcm_multiply(array_uint, dcmfile.DoseGridScaling, dcmfile.BitsAllocated, dcmfile.PixelRepresentation, np.amax(array_uint), 8)
 \Test '''
 
-##################
+
 ### References ###
-##################
 # [A] https://stackoverflow.com/questions/44492420/pydicom-dataset-object-has-no-attribute-transfersyntaxuid
 # [B] https://www.dicomlibrary.com/dicom/transfer-syntax/)
 # [C] http://pydicom.readthedocs.io/en/stable/working_with_pixel_data.html
