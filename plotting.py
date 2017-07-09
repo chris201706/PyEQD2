@@ -7,20 +7,14 @@ Summary:    Plotting function for dose distribution. Legend. Custom colormap.
 '''
 
 
-################
 ### Preamble ###
-################
-
 import matplotlib.colors as colors
 import matplotlib.pyplot as plt
 import numpy as np
 
 
-################
 ### Plotting ###
-################
-
-# CUSTOM COLORMAP:
+# defining a custom colormap
 # Cf. [A] for creation of custom colormaps; the following code is based on this source.
 # generate a jet colormap with 10 values:
 jet = plt.cm.get_cmap("jet", 10)
@@ -90,9 +84,7 @@ rtdose_plot(dcmfile.pixel_array, 'RTDOSE', newjet)
 \Test '''
 
 
-##################
 ### References ###
-##################
 # [A] http://matplotlib.1069221.n5.nabble.com/get-colorlist-and-values-from-existing-matplotlib-colormaps-td23788.html
 # [B] https://stackoverflow.com/questions/2451264/creating-a-colormap-legend-in-matplotlib
 # [C] https://stackoverflow.com/questions/19626530/python-xticks-in-subplots
