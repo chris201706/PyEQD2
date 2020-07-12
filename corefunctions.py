@@ -139,9 +139,9 @@ def scale_for_storage(array_float, orig_precision, orig_signedness, orig_maxval)
     rounded = np.around(scaled, decimals=0) # round before simply truncating all decimals via 'astype:'
     converted = rounded.astype(precision_arrayfunc)
     print("——Array scaled for storage. Log:\n",
-          "Floating-point precision of original file: unsigned %d-bit." % orig_precision,
+          "Floating-point precision of original file: unsigned %d-bit.\n (The above value will not be changed)\n" % orig_precision,
           "Theoretical maximum value: %d.\n" % precision_maxval,
-          "Actual maximum value in original file: %d\n" % orig_maxval,
+          "Actual maximum value in original file: %d\n (The above value will not be changed)\n" % orig_maxval,
           "New scalefactor (DICOM DoseGridScaling): approx. %.9E\n" % scalefactor,
           "Minimum / Maximum values of input array before any modifications",
           "(displaying 6 decimals):\n %.6f / %.6f\n" % (np.amin(array_float),np.amax(array_float)),
@@ -157,7 +157,9 @@ array_uint, new_scalefactor = scale_for_storage(array_multiplied)
 \Test '''
 
 
-def export_dcm(dcmfile, name):
+def export_dcm(dcmfile, pixelarray, name):
+    # Add modified data back to DICOM file:
+    dcmfile.PixelData = pixelarray.tostring()
     path = os.getcwd()+'/'
     dcmfile.save_as(path+name+'_PyEQD2.dcm')
     print("——Exported the DICOM file to current working directory.\n",
