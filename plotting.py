@@ -1,8 +1,4 @@
 '''
-Version:    1.0
-Status:     finished
-Date:       Jun 22, 2017
-Author:     ***REMOVED***
 Summary:    Plotting function for dose distribution. Legend. Custom colormap.
 '''
 
