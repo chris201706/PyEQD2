@@ -17,23 +17,29 @@ class RTDose:
             self.pixelarray, self.shape = read_dose(self.dcmfile)
             self.pixelspacing = self.dcmfile.PixelSpacing
             self.raw_maxval = np.amax(self.pixelarray)
-            self.scalefactor = self.dcmfile.DoseGridScaling
             self.precision = self.dcmfile.BitsAllocated
             self.signedness = self.dcmfile.PixelRepresentation # Cf. [A] for PixelRepresentation: 0 is unsigned, 1 is signed
-            print("––New instance of Class RTDose has been initiated.")
+            print("--New instance of Class RTDose has been initiated.")
         else:
             raise ValueError("Input file is not of modality 'RTDOSE'.(Returning False.)")
     def make_eqd2(self, fn, abratio):
-        self.pixelarray, self.scalefactor = dcm_to_eqd2(self.pixelarray, self.scalefactor, self.precision, self.signedness, self.raw_maxval, fn, abratio)
+        self.pixelarray, self.dcmfile.DoseGridScaling = dcm_to_eqd2(self.pixelarray, self.dcmfile.DoseGridScaling, self.precision, self.signedness, self.raw_maxval, fn, abratio)
     def multiply(self, factor):
-        self.pixelarray, self.scalefactor = dcm_multiply(self.pixelarray, self.scalefactor, self.precision, self.signedness, self.raw_maxval, factor)
+        self.pixelarray, self.dcmfile.DoseGridScaling = dcm_multiply(self.pixelarray, self.dcmfile.DoseGridScaling, self.precision, self.signedness, self.raw_maxval, factor)
+    def make_physical(self): # required for RayStation 6
+        original_dosetype = self.dcmfile.DoseType
+        try:
+            self.dcmfile.DoseType = 'PHYSICAL'
+            print("--Successfully changed the DICOM file's DoseType from / to:\n %s\n %s" % (original_dosetype, self.dcmfile.DoseType))
+        except:
+            raise RuntimeError("An error occured while changing the DICOM file's DoseType.")
     def plot(self):
         rtdose_plot(self.pixelarray, self.name, newjet)
     def plot_legend(self):
         legend(newjet)
         pass
     def export(self):
-        export_dcm(self.dcmfile, self.name)   # simply exports to current directory (where plots and legends are also saved – consistency!)
+        export_dcm(self.dcmfile, self.pixelarray, self.name) # simply exports to current directory (where plots and legends are also saved -- consistency!)
 
 ''' Test
 dicompath = '/Users/macuser/Downloads/testfile.dcm'
