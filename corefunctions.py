@@ -1,8 +1,4 @@
 '''
-Version:    1.0
-Status:     finished
-Date:       Jun 22, 2017
-Author:     ***REMOVED***
 Summary:    Import/Export DICOM RT-DOSE, convert to EQD2, multiply dose distribution by an arbitrary factor.
 '''
 
