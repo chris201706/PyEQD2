@@ -1,5 +1,5 @@
 ## PyEQD2
-Use Python to convert a DICOM-RT dose distribution to its Linear Quadratic Equivalent Dose in 2-Gy Fractions (LQED2, EQD2).
+Use Python to convert a DICOM-RT dose distribution to its Linear Quadratic Equivalent Dose in 2-Gy Fractions (LQED2, EQD2), according to the equation:
 <br />
 
 <img src="EQD2_equation_2102_862.png" width="191" height="78">
