@@ -9,8 +9,8 @@ import pyeqd2 as eqd
 dicompath = '/Users/macuser/Downloads/testfile.dcm'
 
 a = eqd.RTDose(dicompath)   # load dicom-rt file
-a.plot()   # get a glimpse at the dose distribution
-a.plot_legend()
+a.plot()   # get a glimpse
+a.plot_legend()   # interpret the glimpse
 
 fractions = 8   # number of fractions
 abratio = 3     # alpha/beta ratio
