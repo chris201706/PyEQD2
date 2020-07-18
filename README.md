@@ -15,7 +15,7 @@ a.plot_legend()   # interpret the glimpse
 fractions = 8   # number of fractions
 abratio = 3     # alpha/beta ratio
 a.make_eqd2(fractions, abratio)     # conversion
-a.export()     # save new dicom-rt file
+a.export()     # save as new dicom-rt file
 ```
 
 #### Example (Other Commands)
