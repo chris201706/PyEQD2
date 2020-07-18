@@ -20,7 +20,7 @@ a.export()                          # save as new dicom-rt file
 
 #### Example (Other Commands)
 ```
-# For an easy way to multiply the entire dose distribution before or after conversion to EQD2:
+# Multiply the entire dose distribution before or after conversion:
 factor = 8
 a.multiply(factor)
 ```
