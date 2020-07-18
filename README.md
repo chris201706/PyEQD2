@@ -23,7 +23,6 @@ a.export()
 factor = 8
 a.multiply(factor)
 ```
-<br />
 
 #### Requirements:
 Python 3 Standard Library with the following additional packages:
