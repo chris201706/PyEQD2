@@ -25,7 +25,4 @@ a.multiply(factor)
 ```
 
 #### Requirements:
-Python 3 Standard Library with the following additional packages:
-* [Matplotlib](https://github.com/matplotlib/matplotlib)
-* [NumPy](https://github.com/numpy/numpy)
-* [pydicom](https://github.com/pydicom/pydicom)
+Python 3 Standard Library with the additional packages [Matplotlib](https://github.com/matplotlib/matplotlib), [NumPy](https://github.com/numpy/numpy), [pydicom](https://github.com/pydicom/pydicom).
