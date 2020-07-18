@@ -38,4 +38,4 @@ Python 3 Standard Library with the following additional packages:
 <br />
 
 #### Credit: 
-Based on Darcy Mason's pydicom (http://www.pydicom.org) – thank you for your hard work!
+Based on [pydicom](https://github.com/pydicom/pydicom).
