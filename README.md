@@ -8,7 +8,7 @@ Use Python to convert a DICOM-RT dose distribution to its Linear Quadratic Equiv
 ```
 import pyeqd2 as eqd
 
-dicompath = '/Users/macuser/Downloads/testfile.dcm'
+dicompath = 'my_directory/testfile.dcm'
 
 a = eqd.RTDose(dicompath)   # load dicom-rt file
 a.plot()                    # get a glimpse
