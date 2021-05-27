@@ -4,6 +4,8 @@ Use Python to convert a DICOM-RT dose distribution to its Linear Quadratic Equiv
 
 <img src="EQD2_equation_2102_862.png" width="191" height="78">
 
+Tested only with RayStation 6.
+
 #### Example (Main Functions)
 ```
 import pyeqd2 as eqd
